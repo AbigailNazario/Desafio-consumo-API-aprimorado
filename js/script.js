@@ -121,6 +121,24 @@ function atualizarTela(dados, local) {
 
   icone.src = "https://cdn-icons-png.flaticon.com/512/869/869869.png";
 }
+/*Colocando botão na barra de navegação*/
+let deferredPrompt;
+
+window.addEventListener("beforeinstallprompt", (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+
+  const botao = document.createElement("button");
+  botao.textContent = "Instalar App";
+  botao.style.marginTop = "10px";
+
+  document.body.appendChild(botao);
+
+  botao.addEventListener("click", async () => {
+    deferredPrompt.prompt();
+    deferredPrompt = null;
+  });
+});
 /*ativa o service-worker*/
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("/service-worker.js")
