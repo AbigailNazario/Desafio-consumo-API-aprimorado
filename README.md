@@ -1,59 +1,91 @@
-# 🌤️ Clima Agora
+# 🌤️ Clima Agora - PWA
 
-Aplicação web responsiva que permite buscar o clima atual de qualquer cidade, exibindo temperatura, vento e outras informações em tempo real.
-
+Aplicação web responsiva de previsão do tempo desenvolvida com **HTML, CSS e JavaScript**, consumindo API pública e evoluída para **PWA (Progressive Web App)** com uso de recursos de hardware.
 
 ## Sobre o projeto
 
-O **Clima Agora** é um projeto desenvolvido com foco em aprendizado de desenvolvimento web, utilizando consumo de API pública para exibição de dados climáticos.
+O **Clima Agora** permite ao usuário consultar o clima de qualquer cidade ou utilizar sua **localização atual automaticamente**.
 
+Esta versão representa uma evolução do projeto inicial, com melhorias significativas em:
+
+*  Interface (UI/UX)
+*  Performance
+*  Funcionalidades (PWA + Hardware)
+*  Métricas do Lighthouse
 
 ## Funcionalidades
 
-* Busca de cidade pelo nome
-* Exibição da temperatura atual
-* Velocidade do vento
-* Informações climáticas em tempo real
-* Layout responsivo (mobile e desktop)
-
+*  Busca por nome da cidade
+*  Geolocalização automática
+*  Temperatura em tempo real
+*  Velocidade do vento
+*  Detecção de conexão (online/offline)
+*  Instalação como aplicativo (PWA)
+*  Layout responsivo (mobile-first)
 
 ## Tecnologias utilizadas
 
 * HTML5
 * CSS3
 * JavaScript
+* API Open-Meteo
+
+##  Comparação de desempenho (Lighthouse)
+
+### 🆕 Versão Melhorada
+
+![Lighthouse Novo](./imagens/lighhouse-versao2.png)
+
+* ⚡ Performance: 100
+* ♿ Acessibilidade: 93
+* 🛠️ Boas práticas: 88
+* 🔎 SEO: 91
 
 
-## API utilizada
+### 🧪 Versão Inicial
 
-* Open-Meteo
+![Lighthouse Antigo](./images/lighhouse-versao1.png)
 
+* ⚡ Performance: 99
+* ♿ Acessibilidade: 86
+* 🛠️ Boas práticas: 73
+* 🔎 SEO: 91
 
-## Estrutura do projeto
+## Evoluções implementadas
 
-```
-/clima-agora
- ├── css/
- │    └── style.css
- ├── js/
- │    └── script.js
- ├── index.html
-```
-
+*  Melhoria no design (UI mais moderna e mobile-first)
+*  Implementação como **PWA (manifest + service worker)**
+*  Uso de **geolocalização** para clima automático
+*  Detecção de status da internet
+*  Otimizações que melhoraram o score do Lighthouse
 
 ## Deploy
 
-O projeto pode ser acessado online através do Netlify:
+ Acesse o projeto:
+ https://webclimapwa.netlify.app/
 
-(https://desafioconsumoapi.netlify.app/)
+## 📲 PWA
 
+O projeto pode ser instalado como aplicativo diretamente pelo navegador:
+
+* ✔️ Funciona offline (parcialmente)
+* ✔️ Pode ser adicionado à tela inicial
+* ✔️ Experiência semelhante a app nativo
 
 
 ## Autora
 
 Desenvolvido por **Abigail Maria Nazário** 
+Estudante de Análise e Desenvolvimento de Sistemas
 
 ## Observações
 
-Este projeto foi desenvolvido para fins educacionais e prática de consumo de APIs e responsividade.
+Este projeto foi desenvolvido para fins educacionais, com foco em:
+
+* Consumo de API
+* Responsividade
+* Progressive Web App (PWA)
+* Uso de recursos de hardware do navegador
+
+---
 
