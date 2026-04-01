@@ -44,7 +44,7 @@ Esta versão representa uma evolução do projeto inicial, com melhorias signifi
 
 ### 🧪 Versão Inicial
 
-![Lighthouse Antigo](./images/lighhouse-versao1.png)
+![Lighthouse Antigo](./imagens/lighhouse-versao1.png)
 
 * ⚡ Performance: 99
 * ♿ Acessibilidade: 86
